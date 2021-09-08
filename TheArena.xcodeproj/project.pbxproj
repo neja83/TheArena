@@ -7,23 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADB0F49526E2A09B00EFFDA6 /* TabsPanelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F49426E2A09B00EFFDA6 /* TabsPanelComponent.swift */; };
+		ADB0F49926E2B01D00EFFDA6 /* TabsStateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F49826E2B01D00EFFDA6 /* TabsStateComponent.swift */; };
+		ADB0F49C26E2B45C00EFFDA6 /* TabStateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F49B26E2B45C00EFFDA6 /* TabStateSystem.swift */; };
+		ADB0F49E26E3ED5800EFFDA6 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F49D26E3ED5800EFFDA6 /* Statistic.swift */; };
+		ADB0F4A026E3F24B00EFFDA6 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F49F26E3F24B00EFFDA6 /* Skills.swift */; };
+		ADB0F4A326E3F2C900EFFDA6 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F4A226E3F2C900EFFDA6 /* Inventory.swift */; };
+		ADB0F4A626E3F56C00EFFDA6 /* EntityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F4A526E3F56C00EFFDA6 /* EntityExtension.swift */; };
+		ADB0F4A826E3FBB700EFFDA6 /* ShowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F4A726E3FBB700EFFDA6 /* ShowComponent.swift */; };
+		ADB0F4AB26E402BE00EFFDA6 /* NetworkComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F4AA26E402BE00EFFDA6 /* NetworkComponent.swift */; };
+		ADB0F4AE26E4056D00EFFDA6 /* RatingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F4AD26E4056D00EFFDA6 /* RatingComponent.swift */; };
+		ADB0F4B026E6956800EFFDA6 /* CellOfSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F4AF26E6956800EFFDA6 /* CellOfSkill.swift */; };
+		ADB0F4B326E6A84900EFFDA6 /* ActiveSkillsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F4B226E6A84900EFFDA6 /* ActiveSkillsComponent.swift */; };
+		ADB0F4B626E9206B00EFFDA6 /* SkillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F4B526E9206B00EFFDA6 /* SkillItem.swift */; };
+		ADB0F4B826E9208A00EFFDA6 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F4B726E9208A00EFFDA6 /* Cell.swift */; };
+		ADB0F4BA26E9230E00EFFDA6 /* SkillMovingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F4B926E9230E00EFFDA6 /* SkillMovingComponent.swift */; };
+		ADB0F4BC26E92A2600EFFDA6 /* CommonSkillsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F4BB26E92A2600EFFDA6 /* CommonSkillsComponent.swift */; };
 		ADC0AC1526D41C55006E21C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC1426D41C55006E21C5 /* AppDelegate.swift */; };
 		ADC0AC1726D41C55006E21C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC1626D41C55006E21C5 /* SceneDelegate.swift */; };
-		ADC0AC1926D41C55006E21C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC1826D41C55006E21C5 /* ViewController.swift */; };
+		ADC0AC1926D41C55006E21C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC1826D41C55006E21C5 /* LoginViewController.swift */; };
 		ADC0AC1C26D41C55006E21C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC0AC1A26D41C55006E21C5 /* Main.storyboard */; };
 		ADC0AC1E26D41C56006E21C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC0AC1D26D41C56006E21C5 /* Assets.xcassets */; };
 		ADC0AC2126D41C56006E21C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC0AC1F26D41C56006E21C5 /* LaunchScreen.storyboard */; };
+		ADC0AC2A26D42187006E21C5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC2926D42187006E21C5 /* GameViewController.swift */; };
+		ADC0AC2C26D443C1006E21C5 /* RestoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC2B26D443C1006E21C5 /* RestoreViewController.swift */; };
+		ADC0AC3226D570C1006E21C5 /* LobbyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = ADC0AC3126D570C1006E21C5 /* LobbyScene.sks */; };
+		ADC0AC3426D57105006E21C5 /* LobbyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC3326D57105006E21C5 /* LobbyScene.swift */; };
+		ADC0AC3726D588CB006E21C5 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC3626D588CB006E21C5 /* Button.swift */; };
+		ADC0AC3A26D58D4A006E21C5 /* FightScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC3926D58D4A006E21C5 /* FightScene.swift */; };
+		ADC0AC3C26D58DF0006E21C5 /* FightScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = ADC0AC3B26D58DF0006E21C5 /* FightScene.sks */; };
+		ADC0AC3E26D6CE10006E21C5 /* SceneCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC3D26D6CE10006E21C5 /* SceneCreator.swift */; };
+		ADC0AC4126D823BD006E21C5 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC4026D823BD006E21C5 /* LoadingViewController.swift */; };
+		ADC0AC4526D976BC006E21C5 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC4426D976BC006E21C5 /* EndPointType.swift */; };
+		ADC0AC4826D97809006E21C5 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC4726D97809006E21C5 /* HTTPMethod.swift */; };
+		ADC0AC4A26D978B7006E21C5 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC4926D978B7006E21C5 /* HTTPTask.swift */; };
+		ADC0AC4D26D97998006E21C5 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC4C26D97998006E21C5 /* ParameterEncoding.swift */; };
+		ADC0AC4F26D97AA4006E21C5 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC4E26D97AA4006E21C5 /* NetworkErrors.swift */; };
+		ADC0AC5126D97BC6006E21C5 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC5026D97BC6006E21C5 /* URLParameterEncoder.swift */; };
+		ADC0AC5326D97FB0006E21C5 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC5226D97FB0006E21C5 /* JSONParameterEncoder.swift */; };
+		ADC0AC5526D980A2006E21C5 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC5426D980A2006E21C5 /* NetworkRouter.swift */; };
+		ADC0AC5726D981B1006E21C5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC5626D981B1006E21C5 /* Router.swift */; };
+		ADC0AC5926D98906006E21C5 /* AuthEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC5826D98906006E21C5 /* AuthEndPoint.swift */; };
+		ADC0AC5C26D98C0B006E21C5 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC5B26D98C0B006E21C5 /* AuthResponse.swift */; };
+		ADC0AC5F26D99076006E21C5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC5E26D99076006E21C5 /* NetworkManager.swift */; };
+		ADC0AC6126DFFC3E006E21C5 /* PreloadLobbyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC6026DFFC3E006E21C5 /* PreloadLobbyScene.swift */; };
+		ADC0AC6426DFFD25006E21C5 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC6326DFFD25006E21C5 /* EntityManager.swift */; };
+		ADC0AC6726DFFF49006E21C5 /* VisualComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC6626DFFF49006E21C5 /* VisualComponent.swift */; };
+		ADC0AC6C26E004ED006E21C5 /* PositionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC6B26E004ED006E21C5 /* PositionComponent.swift */; };
+		ADC0AC7026E00F8E006E21C5 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC6F26E00F8E006E21C5 /* StartButton.swift */; };
+		ADC0AC7426E14145006E21C5 /* EntityFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC7326E14145006E21C5 /* EntityFactory.swift */; };
+		ADC0AC7726E15D9C006E21C5 /* SceneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC7626E15D9C006E21C5 /* SceneList.swift */; };
+		ADC0AC7926E15E1B006E21C5 /* SceneDescribing.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC7826E15E1B006E21C5 /* SceneDescribing.swift */; };
+		ADC0AC7B26E16021006E21C5 /* PreloadFightScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC7A26E16021006E21C5 /* PreloadFightScene.swift */; };
+		ADC0AC7D26E28A3B006E21C5 /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC7C26E28A3B006E21C5 /* SceneType.swift */; };
+		ADC0AC8026E28BB6006E21C5 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC7F26E28BB6006E21C5 /* Avatar.swift */; };
+		ADC0AC8226E28CA9006E21C5 /* NicknameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC8126E28CA9006E21C5 /* NicknameComponent.swift */; };
+		ADC0AC8426E2937C006E21C5 /* FrameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC8326E2937C006E21C5 /* FrameComponent.swift */; };
+		ADC0AC8626E29831006E21C5 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC8526E29831006E21C5 /* Tabs.swift */; };
+		ADC0AC8826E29A76006E21C5 /* StartButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0AC8726E29A76006E21C5 /* StartButtonComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ADB0F49426E2A09B00EFFDA6 /* TabsPanelComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsPanelComponent.swift; sourceTree = "<group>"; };
+		ADB0F49826E2B01D00EFFDA6 /* TabsStateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsStateComponent.swift; sourceTree = "<group>"; };
+		ADB0F49B26E2B45C00EFFDA6 /* TabStateSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStateSystem.swift; sourceTree = "<group>"; };
+		ADB0F49D26E3ED5800EFFDA6 /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
+		ADB0F49F26E3F24B00EFFDA6 /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		ADB0F4A226E3F2C900EFFDA6 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		ADB0F4A526E3F56C00EFFDA6 /* EntityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityExtension.swift; sourceTree = "<group>"; };
+		ADB0F4A726E3FBB700EFFDA6 /* ShowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowComponent.swift; sourceTree = "<group>"; };
+		ADB0F4AA26E402BE00EFFDA6 /* NetworkComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkComponent.swift; sourceTree = "<group>"; };
+		ADB0F4AD26E4056D00EFFDA6 /* RatingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingComponent.swift; sourceTree = "<group>"; };
+		ADB0F4AF26E6956800EFFDA6 /* CellOfSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOfSkill.swift; sourceTree = "<group>"; };
+		ADB0F4B226E6A84900EFFDA6 /* ActiveSkillsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSkillsComponent.swift; sourceTree = "<group>"; };
+		ADB0F4B526E9206B00EFFDA6 /* SkillItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillItem.swift; sourceTree = "<group>"; };
+		ADB0F4B726E9208A00EFFDA6 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		ADB0F4B926E9230E00EFFDA6 /* SkillMovingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillMovingComponent.swift; sourceTree = "<group>"; };
+		ADB0F4BB26E92A2600EFFDA6 /* CommonSkillsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSkillsComponent.swift; sourceTree = "<group>"; };
 		ADC0AC1126D41C55006E21C5 /* TheArena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheArena.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC0AC1426D41C55006E21C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC0AC1626D41C55006E21C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADC0AC1826D41C55006E21C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADC0AC1826D41C55006E21C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADC0AC1B26D41C55006E21C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADC0AC1D26D41C56006E21C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADC0AC2026D41C56006E21C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADC0AC2226D41C56006E21C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC0AC2926D42187006E21C5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		ADC0AC2B26D443C1006E21C5 /* RestoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreViewController.swift; sourceTree = "<group>"; };
+		ADC0AC3126D570C1006E21C5 /* LobbyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LobbyScene.sks; sourceTree = "<group>"; };
+		ADC0AC3326D57105006E21C5 /* LobbyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyScene.swift; sourceTree = "<group>"; };
+		ADC0AC3626D588CB006E21C5 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		ADC0AC3926D58D4A006E21C5 /* FightScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightScene.swift; sourceTree = "<group>"; };
+		ADC0AC3B26D58DF0006E21C5 /* FightScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FightScene.sks; sourceTree = "<group>"; };
+		ADC0AC3D26D6CE10006E21C5 /* SceneCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCreator.swift; sourceTree = "<group>"; };
+		ADC0AC4026D823BD006E21C5 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		ADC0AC4426D976BC006E21C5 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		ADC0AC4726D97809006E21C5 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		ADC0AC4926D978B7006E21C5 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		ADC0AC4C26D97998006E21C5 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		ADC0AC4E26D97AA4006E21C5 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		ADC0AC5026D97BC6006E21C5 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		ADC0AC5226D97FB0006E21C5 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		ADC0AC5426D980A2006E21C5 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		ADC0AC5626D981B1006E21C5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		ADC0AC5826D98906006E21C5 /* AuthEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndPoint.swift; sourceTree = "<group>"; };
+		ADC0AC5B26D98C0B006E21C5 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		ADC0AC5E26D99076006E21C5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ADC0AC6026DFFC3E006E21C5 /* PreloadLobbyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadLobbyScene.swift; sourceTree = "<group>"; };
+		ADC0AC6326DFFD25006E21C5 /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		ADC0AC6626DFFF49006E21C5 /* VisualComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualComponent.swift; sourceTree = "<group>"; };
+		ADC0AC6B26E004ED006E21C5 /* PositionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionComponent.swift; sourceTree = "<group>"; };
+		ADC0AC6F26E00F8E006E21C5 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		ADC0AC7326E14145006E21C5 /* EntityFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityFactory.swift; sourceTree = "<group>"; };
+		ADC0AC7626E15D9C006E21C5 /* SceneList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneList.swift; sourceTree = "<group>"; };
+		ADC0AC7826E15E1B006E21C5 /* SceneDescribing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDescribing.swift; sourceTree = "<group>"; };
+		ADC0AC7A26E16021006E21C5 /* PreloadFightScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadFightScene.swift; sourceTree = "<group>"; };
+		ADC0AC7C26E28A3B006E21C5 /* SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneType.swift; sourceTree = "<group>"; };
+		ADC0AC7F26E28BB6006E21C5 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		ADC0AC8126E28CA9006E21C5 /* NicknameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameComponent.swift; sourceTree = "<group>"; };
+		ADC0AC8326E2937C006E21C5 /* FrameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameComponent.swift; sourceTree = "<group>"; };
+		ADC0AC8526E29831006E21C5 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		ADC0AC8726E29A76006E21C5 /* StartButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +141,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADB0F49326E2A07500EFFDA6 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0F49426E2A09B00EFFDA6 /* TabsPanelComponent.swift */,
+				ADB0F49826E2B01D00EFFDA6 /* TabsStateComponent.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		ADB0F49A26E2B40A00EFFDA6 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0F49B26E2B45C00EFFDA6 /* TabStateSystem.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		ADB0F4A126E3F29800EFFDA6 /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC7F26E28BB6006E21C5 /* Avatar.swift */,
+				ADC0AC8526E29831006E21C5 /* Tabs.swift */,
+				ADB0F49D26E3ED5800EFFDA6 /* Statistic.swift */,
+				ADB0F49F26E3F24B00EFFDA6 /* Skills.swift */,
+				ADB0F4A226E3F2C900EFFDA6 /* Inventory.swift */,
+			);
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+		ADB0F4A426E3F55400EFFDA6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0F4A526E3F56C00EFFDA6 /* EntityExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ADB0F4A926E402A100EFFDA6 /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC8126E28CA9006E21C5 /* NicknameComponent.swift */,
+			);
+			path = Avatar;
+			sourceTree = "<group>";
+		};
+		ADB0F4AC26E4051A00EFFDA6 /* TabsContent */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0F4AD26E4056D00EFFDA6 /* RatingComponent.swift */,
+			);
+			path = TabsContent;
+			sourceTree = "<group>";
+		};
+		ADB0F4B126E6A80D00EFFDA6 /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0F4B226E6A84900EFFDA6 /* ActiveSkillsComponent.swift */,
+				ADB0F4B926E9230E00EFFDA6 /* SkillMovingComponent.swift */,
+				ADB0F4BB26E92A2600EFFDA6 /* CommonSkillsComponent.swift */,
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
+		ADB0F4B426E9205900EFFDA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0F4B526E9206B00EFFDA6 /* SkillItem.swift */,
+				ADB0F4B726E9208A00EFFDA6 /* Cell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ADC0AC0826D41C54006E21C5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +232,187 @@
 		ADC0AC1326D41C55006E21C5 /* TheArena */ = {
 			isa = PBXGroup;
 			children = (
+				ADC0AC6226DFFD11006E21C5 /* ECS */,
+				ADC0AC4226D9609C006E21C5 /* Networking */,
+				ADC0AC3526D588BE006E21C5 /* Nodes */,
+				ADC0AC2F26D5708F006E21C5 /* Scenes */,
+				ADC0AC2826D41DA1006E21C5 /* Views */,
 				ADC0AC1426D41C55006E21C5 /* AppDelegate.swift */,
 				ADC0AC1626D41C55006E21C5 /* SceneDelegate.swift */,
-				ADC0AC1826D41C55006E21C5 /* ViewController.swift */,
 				ADC0AC1A26D41C55006E21C5 /* Main.storyboard */,
 				ADC0AC1D26D41C56006E21C5 /* Assets.xcassets */,
 				ADC0AC1F26D41C56006E21C5 /* LaunchScreen.storyboard */,
 				ADC0AC2226D41C56006E21C5 /* Info.plist */,
 			);
 			path = TheArena;
+			sourceTree = "<group>";
+		};
+		ADC0AC2826D41DA1006E21C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC1826D41C55006E21C5 /* LoginViewController.swift */,
+				ADC0AC2926D42187006E21C5 /* GameViewController.swift */,
+				ADC0AC2B26D443C1006E21C5 /* RestoreViewController.swift */,
+				ADC0AC4026D823BD006E21C5 /* LoadingViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADC0AC2F26D5708F006E21C5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC3826D58D24006E21C5 /* Fight */,
+				ADC0AC3026D5709A006E21C5 /* Lobby */,
+				ADC0AC7526E15D7C006E21C5 /* Models */,
+				ADC0AC7E26E28B3E006E21C5 /* Service */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ADC0AC3026D5709A006E21C5 /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC3126D570C1006E21C5 /* LobbyScene.sks */,
+				ADC0AC3326D57105006E21C5 /* LobbyScene.swift */,
+				ADC0AC6026DFFC3E006E21C5 /* PreloadLobbyScene.swift */,
+			);
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+		ADC0AC3526D588BE006E21C5 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0F4B426E9205900EFFDA6 /* Models */,
+				ADC0AC3626D588CB006E21C5 /* Button.swift */,
+				ADB0F4AF26E6956800EFFDA6 /* CellOfSkill.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		ADC0AC3826D58D24006E21C5 /* Fight */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC3926D58D4A006E21C5 /* FightScene.swift */,
+				ADC0AC3B26D58DF0006E21C5 /* FightScene.sks */,
+				ADC0AC7A26E16021006E21C5 /* PreloadFightScene.swift */,
+			);
+			path = Fight;
+			sourceTree = "<group>";
+		};
+		ADC0AC4226D9609C006E21C5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC5D26D9905D006E21C5 /* Manager */,
+				ADC0AC4B26D9798B006E21C5 /* Endcoding */,
+				ADC0AC4326D97667006E21C5 /* EndPoints */,
+				ADC0AC4626D977E7006E21C5 /* Service */,
+				ADC0AC5A26D98BF1006E21C5 /* Models */,
+				ADC0AC4E26D97AA4006E21C5 /* NetworkErrors.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		ADC0AC4326D97667006E21C5 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC4426D976BC006E21C5 /* EndPointType.swift */,
+				ADC0AC5826D98906006E21C5 /* AuthEndPoint.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		ADC0AC4626D977E7006E21C5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC4726D97809006E21C5 /* HTTPMethod.swift */,
+				ADC0AC4926D978B7006E21C5 /* HTTPTask.swift */,
+				ADC0AC5426D980A2006E21C5 /* NetworkRouter.swift */,
+				ADC0AC5626D981B1006E21C5 /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		ADC0AC4B26D9798B006E21C5 /* Endcoding */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC4C26D97998006E21C5 /* ParameterEncoding.swift */,
+				ADC0AC5026D97BC6006E21C5 /* URLParameterEncoder.swift */,
+				ADC0AC5226D97FB0006E21C5 /* JSONParameterEncoder.swift */,
+			);
+			path = Endcoding;
+			sourceTree = "<group>";
+		};
+		ADC0AC5A26D98BF1006E21C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC5B26D98C0B006E21C5 /* AuthResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ADC0AC5D26D9905D006E21C5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC5E26D99076006E21C5 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		ADC0AC6226DFFD11006E21C5 /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0F4A426E3F55400EFFDA6 /* Extensions */,
+				ADC0AC6826E00210006E21C5 /* Entities */,
+				ADC0AC6526DFFF33006E21C5 /* Components */,
+				ADB0F49A26E2B40A00EFFDA6 /* Systems */,
+				ADC0AC6326DFFD25006E21C5 /* EntityManager.swift */,
+			);
+			path = ECS;
+			sourceTree = "<group>";
+		};
+		ADC0AC6526DFFF33006E21C5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0F4A926E402A100EFFDA6 /* Avatar */,
+				ADB0F49326E2A07500EFFDA6 /* Tabs */,
+				ADB0F4AC26E4051A00EFFDA6 /* TabsContent */,
+				ADB0F4B126E6A80D00EFFDA6 /* Skills */,
+				ADC0AC6626DFFF49006E21C5 /* VisualComponent.swift */,
+				ADC0AC6B26E004ED006E21C5 /* PositionComponent.swift */,
+				ADC0AC8326E2937C006E21C5 /* FrameComponent.swift */,
+				ADC0AC8726E29A76006E21C5 /* StartButtonComponent.swift */,
+				ADB0F4A726E3FBB700EFFDA6 /* ShowComponent.swift */,
+				ADB0F4AA26E402BE00EFFDA6 /* NetworkComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ADC0AC6826E00210006E21C5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0F4A126E3F29800EFFDA6 /* Lobby */,
+				ADC0AC6F26E00F8E006E21C5 /* StartButton.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		ADC0AC7526E15D7C006E21C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC7626E15D9C006E21C5 /* SceneList.swift */,
+				ADC0AC7826E15E1B006E21C5 /* SceneDescribing.swift */,
+				ADC0AC7C26E28A3B006E21C5 /* SceneType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ADC0AC7E26E28B3E006E21C5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0AC7326E14145006E21C5 /* EntityFactory.swift */,
+				ADC0AC3D26D6CE10006E21C5 /* SceneCreator.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +475,8 @@
 				ADC0AC2126D41C56006E21C5 /* LaunchScreen.storyboard in Resources */,
 				ADC0AC1E26D41C56006E21C5 /* Assets.xcassets in Resources */,
 				ADC0AC1C26D41C55006E21C5 /* Main.storyboard in Resources */,
+				ADC0AC3C26D58DF0006E21C5 /* FightScene.sks in Resources */,
+				ADC0AC3226D570C1006E21C5 /* LobbyScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +487,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC0AC1926D41C55006E21C5 /* ViewController.swift in Sources */,
+				ADC0AC4D26D97998006E21C5 /* ParameterEncoding.swift in Sources */,
+				ADC0AC7726E15D9C006E21C5 /* SceneList.swift in Sources */,
+				ADB0F4B326E6A84900EFFDA6 /* ActiveSkillsComponent.swift in Sources */,
+				ADB0F49E26E3ED5800EFFDA6 /* Statistic.swift in Sources */,
+				ADC0AC3726D588CB006E21C5 /* Button.swift in Sources */,
+				ADB0F4B826E9208A00EFFDA6 /* Cell.swift in Sources */,
+				ADC0AC4F26D97AA4006E21C5 /* NetworkErrors.swift in Sources */,
+				ADC0AC2A26D42187006E21C5 /* GameViewController.swift in Sources */,
+				ADC0AC5F26D99076006E21C5 /* NetworkManager.swift in Sources */,
+				ADC0AC5926D98906006E21C5 /* AuthEndPoint.swift in Sources */,
+				ADB0F4BC26E92A2600EFFDA6 /* CommonSkillsComponent.swift in Sources */,
+				ADC0AC7926E15E1B006E21C5 /* SceneDescribing.swift in Sources */,
+				ADC0AC3426D57105006E21C5 /* LobbyScene.swift in Sources */,
+				ADB0F4AE26E4056D00EFFDA6 /* RatingComponent.swift in Sources */,
+				ADC0AC5C26D98C0B006E21C5 /* AuthResponse.swift in Sources */,
+				ADC0AC3A26D58D4A006E21C5 /* FightScene.swift in Sources */,
+				ADC0AC7D26E28A3B006E21C5 /* SceneType.swift in Sources */,
+				ADC0AC7026E00F8E006E21C5 /* StartButton.swift in Sources */,
+				ADC0AC8226E28CA9006E21C5 /* NicknameComponent.swift in Sources */,
+				ADC0AC5726D981B1006E21C5 /* Router.swift in Sources */,
+				ADC0AC1926D41C55006E21C5 /* LoginViewController.swift in Sources */,
+				ADC0AC4A26D978B7006E21C5 /* HTTPTask.swift in Sources */,
+				ADB0F4A826E3FBB700EFFDA6 /* ShowComponent.swift in Sources */,
+				ADC0AC7426E14145006E21C5 /* EntityFactory.swift in Sources */,
+				ADC0AC5126D97BC6006E21C5 /* URLParameterEncoder.swift in Sources */,
+				ADC0AC7B26E16021006E21C5 /* PreloadFightScene.swift in Sources */,
+				ADB0F4B626E9206B00EFFDA6 /* SkillItem.swift in Sources */,
+				ADC0AC4526D976BC006E21C5 /* EndPointType.swift in Sources */,
+				ADC0AC6426DFFD25006E21C5 /* EntityManager.swift in Sources */,
+				ADB0F4B026E6956800EFFDA6 /* CellOfSkill.swift in Sources */,
+				ADC0AC6C26E004ED006E21C5 /* PositionComponent.swift in Sources */,
+				ADC0AC8626E29831006E21C5 /* Tabs.swift in Sources */,
+				ADB0F4A026E3F24B00EFFDA6 /* Skills.swift in Sources */,
 				ADC0AC1526D41C55006E21C5 /* AppDelegate.swift in Sources */,
+				ADC0AC8826E29A76006E21C5 /* StartButtonComponent.swift in Sources */,
+				ADC0AC3E26D6CE10006E21C5 /* SceneCreator.swift in Sources */,
+				ADB0F4BA26E9230E00EFFDA6 /* SkillMovingComponent.swift in Sources */,
+				ADC0AC4826D97809006E21C5 /* HTTPMethod.swift in Sources */,
+				ADB0F4A626E3F56C00EFFDA6 /* EntityExtension.swift in Sources */,
+				ADB0F49926E2B01D00EFFDA6 /* TabsStateComponent.swift in Sources */,
+				ADC0AC4126D823BD006E21C5 /* LoadingViewController.swift in Sources */,
+				ADB0F4AB26E402BE00EFFDA6 /* NetworkComponent.swift in Sources */,
+				ADC0AC5326D97FB0006E21C5 /* JSONParameterEncoder.swift in Sources */,
 				ADC0AC1726D41C55006E21C5 /* SceneDelegate.swift in Sources */,
+				ADB0F4A326E3F2C900EFFDA6 /* Inventory.swift in Sources */,
+				ADC0AC6726DFFF49006E21C5 /* VisualComponent.swift in Sources */,
+				ADC0AC2C26D443C1006E21C5 /* RestoreViewController.swift in Sources */,
+				ADC0AC8426E2937C006E21C5 /* FrameComponent.swift in Sources */,
+				ADB0F49526E2A09B00EFFDA6 /* TabsPanelComponent.swift in Sources */,
+				ADB0F49C26E2B45C00EFFDA6 /* TabStateSystem.swift in Sources */,
+				ADC0AC8026E28BB6006E21C5 /* Avatar.swift in Sources */,
+				ADC0AC5526D980A2006E21C5 /* NetworkRouter.swift in Sources */,
+				ADC0AC6126DFFC3E006E21C5 /* PreloadLobbyScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
