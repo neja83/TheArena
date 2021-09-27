@@ -13,7 +13,7 @@ class Statistic: GKEntity {
     init(textureName: String, buttonTextureName: String, onStartClick: @escaping ((Button) -> ())) {
         super.init()
         
-        let visualComponent = VisualComponent(textureName: textureName)
+        let visualComponent = VisualComponent(textureName: textureName, zPosition: 5)
         let showComponent =   ShowComponent()
         
         let startButtonTexture = SKTexture(imageNamed: buttonTextureName)

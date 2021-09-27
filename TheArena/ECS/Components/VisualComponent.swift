@@ -11,9 +11,10 @@ class VisualComponent: GKComponent {
     
     var node: SKNode
     
-    init(textureName: String) {
+    init(textureName: String, zPosition: CGFloat = .zero) {
         let texture = SKTexture(imageNamed: textureName)
         node = SKSpriteNode(texture: texture, size: texture.size())
+        node.zPosition = zPosition
         node.name = "VisualComponent"
         super.init()
     }

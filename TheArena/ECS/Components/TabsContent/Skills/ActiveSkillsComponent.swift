@@ -16,13 +16,13 @@ class ActiveSkillComponent: GKComponent {
 extension ActiveSkillComponent {
     
     override func didAddToEntity() {
-        if let node = entity?.component(ofType: DragAndDropComponent.self)?.node {
-            self.node.position = CGPoint(x: -node.frame.size.width/3, y: 0)
-            self.node.zPosition = 10
-            self.node.name = "ActiveSkillComponent"
+        if let dragAndDropNode = entity?.component(ofType: DragAndDropComponent.self)?.node {
+            node.position = CGPoint(x: -dragAndDropNode.frame.size.width/3, y: 0)
+            node.zPosition = dragAndDropNode.zPosition + 5
+            node.name = "ActiveSkillComponent"
             
             node.entity = entity
-            node.addChild(self.node)
+            dragAndDropNode.addChild(node)
         }
     }
 }

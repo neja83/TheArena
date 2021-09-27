@@ -45,15 +45,17 @@ class ListNode: SKShapeNode {
         let countSize = countLabel.frame.size;
         countLabel.position = CGPoint(x: size.width/2 - countSize.width, y: size.height/2 - countSize.height)
         countLabel.fontColor = .white
-        countLabel.zPosition = 15
+        countLabel.zPosition = zPosition + 5
         addChild(countLabel)
     }
 
     /// Create cell and show it
     private func createCell() -> Cell {
         let body = SKShapeNode(circleOfRadius: LobbyElements.skillRadius + 2)
+        body.name = "Cell"
         body.strokeColor = .green
         body.position = calculatePosition(for: list.count)
+        body.zPosition = zPosition + 5
         let cell = ListCell(id: Int32.random(in: 1...Int32.max), node: body)
      
         addChild(body)
@@ -63,7 +65,7 @@ class ListNode: SKShapeNode {
     /// Put new item in cell
     private func put(item: Item, in cell: Cell) {
         item.node.position = cell.node.position
-        item.node.zPosition = cell.node.zPosition + 1
+        item.node.zPosition = cell.node.zPosition + 5
 
         list.append(CellWithItem(cell: cell, item: item))
         item.node.removeFromParent()

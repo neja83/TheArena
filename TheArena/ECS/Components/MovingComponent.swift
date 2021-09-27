@@ -18,12 +18,10 @@ class MovingComponent: GKComponent {
     }
     
     func startMoving() {
-        print(#function)
         isMoving = true
     }
     
     func stopMoving() {
-        print(#function)
         isMoving = false
         stop = true
     }

@@ -25,6 +25,7 @@ class LobbyScene: SKScene {
         let nodes = nodes(at: first.location(in: self))
         
         for node in nodes {
+            print("\(String(describing: node.name)): \(node.zPosition)")
             node.touchesBegan(touches, with: event)
         }
     }

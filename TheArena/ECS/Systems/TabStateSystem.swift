@@ -39,8 +39,6 @@ extension TabsStateComponent {
             }
         }
         
-        
-        
         setState(for: newSelect)
     }
 }

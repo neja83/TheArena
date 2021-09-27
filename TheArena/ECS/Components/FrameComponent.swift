@@ -13,6 +13,7 @@ class FrameComponent: GKComponent {
     
     init(size: CGSize, color: UIColor = .white) {
         shape = SKShapeNode(rectOf: size)
+        shape.name = "Avatar"
         shape.position = .zero
         shape.strokeColor = color
         
@@ -20,8 +21,9 @@ class FrameComponent: GKComponent {
     }
     
     override func didAddToEntity() {
-        if let body = entity?.component(ofType: VisualComponent.self)?.node {
-            body.addChild(shape)
+        if let visualNode = entity?.component(ofType: VisualComponent.self)?.node {
+            shape.zPosition = visualNode.zPosition + 5
+            visualNode.addChild(shape)
         }
     }
     

@@ -12,9 +12,9 @@ class Avatar: GKEntity {
     init(bodyTexture: String, name: String) {
         super.init()
         
-        let visualComponent     = VisualComponent(textureName: bodyTexture)
-        let nicknameComponent   = NicknameComponent(name: name)
-        let frameComponent      = FrameComponent(size: LobbyElements.avatarSize, color: .systemPink)
+        let visualComponent   = VisualComponent(textureName: bodyTexture)
+        let nicknameComponent = NicknameComponent(name: name)
+        let frameComponent    = FrameComponent(size: LobbyElements.avatarSize, color: .systemPink)
         
         addComponent(visualComponent)
         addComponent(nicknameComponent)

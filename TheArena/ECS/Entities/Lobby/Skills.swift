@@ -12,7 +12,7 @@ class Skills: GKEntity {
     init(textureName: String) {
         super.init()
         
-        let visualComponent = VisualComponent(textureName: textureName)
+        let visualComponent = VisualComponent(textureName: textureName, zPosition: 5)
         let dragAndDropComponent = DragAndDropComponent(textureName: textureName)
         let showComponent = ShowComponent(show: false)
         let activeSkillsComponent = ActiveSkillComponent()

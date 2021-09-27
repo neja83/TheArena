@@ -15,25 +15,28 @@ class StartButtonComponent: GKComponent {
     
     init(textureName: String , position: CGPoint = .zero, action: onClickAction? = nil) {
         button = Button(fileName: textureName)
-        button.onClick = action
-        button.position = position
-        
         super.init()
+        
+        setupButton(position: position, action: action)
     }
     
     init(texture: SKTexture , position: CGPoint = .zero, action: onClickAction? = nil) {
         button = Button(texture: texture)
+        super.init()
+        
+        setupButton(position: position, action: action)
+    }
+    
+    private func setupButton(position: CGPoint, action: onClickAction?) {
+        button.name = "Run button"
         button.onClick = action
         button.position = position
-        button.zPosition = 5
-        
-        super.init()
     }
     
     override func didAddToEntity() {
-        if let body = entity?.component(ofType: VisualComponent.self)?.node {
-            
-            body.addChild(button)
+        if let visualNode = entity?.component(ofType: VisualComponent.self)?.node {
+            button.zPosition = visualNode.zPosition + 5
+            visualNode.addChild(button)
         }
     }
     

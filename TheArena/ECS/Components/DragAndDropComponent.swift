@@ -27,8 +27,11 @@ class DragAndDropComponent: GKComponent {
     }
     
     override func didAddToEntity() {
-        entity?.component(ofType: VisualComponent.self)?.node.addChild(node)
-        node.entity = entity
+        if let visualNode = entity?.component(ofType: VisualComponent.self)?.node {
+            visualNode.addChild(node)
+            node.zPosition = visualNode.zPosition + 5
+            node.entity = entity
+        }
     }
     
     required init?(coder: NSCoder) {
