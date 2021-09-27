@@ -2,9 +2,14 @@
 //  Cell.swift
 //  TheArena
 //
-//  Created by Eugene Krapivenko on 08.09.2021.
+//  Created by Eugene Krapivenko on 13.09.2021.
 //
 
+import  SpriteKit
+
 protocol Cell {
-    var item: Item? { get }
+    var id: Int32 { get }
+    var node: SKNode { get }
+    
+    func isEqual(to: Cell) -> Bool;
 }

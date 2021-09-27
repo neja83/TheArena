@@ -13,14 +13,14 @@ class VisualComponent: GKComponent {
     
     init(textureName: String) {
         let texture = SKTexture(imageNamed: textureName)
-        self.node = SKSpriteNode(texture: texture, size: texture.size())
-        
+        node = SKSpriteNode(texture: texture, size: texture.size())
+        node.name = "VisualComponent"
         super.init()
     }
     
     init(node: SKNode) {
         self.node = node
-        
+        self.node.name = "VisualComponent"
         super.init()
     }
     

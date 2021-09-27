@@ -12,8 +12,9 @@ class EntityManager {
     private var entities: [GKEntity] = []
     private var systems:  [GKComponentSystem] = {
         let tabsStateComponent = GKComponentSystem.init(componentClass: TabsStateComponent.self)
+        let spellMovingSystem = GKComponentSystem.init(componentClass: MovingComponent.self)
         
-        return [tabsStateComponent]
+        return [tabsStateComponent, spellMovingSystem]
     }()
     
     var rootNode: SKNode?

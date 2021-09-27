@@ -13,20 +13,18 @@ class Skills: GKEntity {
         super.init()
         
         let visualComponent = VisualComponent(textureName: textureName)
+        let dragAndDropComponent = DragAndDropComponent(textureName: textureName)
         let showComponent = ShowComponent(show: false)
         let activeSkillsComponent = ActiveSkillComponent()
         let commonSkillsComponent = CommonSkillsComponent()
+        let movingComponent = MovingComponent()
     
         addComponent(showComponent)
         addComponent(visualComponent)
+        addComponent(dragAndDropComponent)
         addComponent(activeSkillsComponent)
         addComponent(commonSkillsComponent)
-        
-        let item: Item = SkillItem(name: "Knock", description: "Knock")
-        let skill: CellOfSkill = CellOfSkill(item: item)
-        skill.name = "Skill"
-        
-        activeSkillsComponent.add(skill: skill)
+        addComponent(movingComponent)
     }
     
     required init?(coder: NSCoder) {

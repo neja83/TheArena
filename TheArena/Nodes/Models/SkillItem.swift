@@ -2,22 +2,29 @@
 //  SkillItem.swift
 //  TheArena
 //
-//  Created by Eugene Krapivenko on 08.09.2021.
+//  Created by Eugene Krapivenko on 20.09.2021.
 //
 
-protocol Item {
-    var name: String { get }
-    var description: String { get }
-//    var texture: SKTexture { get }
+import GameplayKit
+
+class SkillItem {
+    
+    var id: Int32
+    var node: ItemNode
+    
+    init(id: Int32, node: ItemNode) {
+        self.id = id
+        self.node = node
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }
 
-class  SkillItem: Item {
-    var name: String
-    
-    var description: String
-    
-    init(name: String, description: String) {
-        self.name = name
-        self.description = description
+extension SkillItem: Item {
+    func isEqual(to: Item) -> Bool {
+        node.isEqual(to: to.node)
     }
 }
