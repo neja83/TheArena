@@ -101,16 +101,17 @@ class AvatarModelNode: SKShapeNode {
 
 extension AvatarModelNode: ContainingItems {
     
-    func create(for item: Item) {
-        print(#function)
-        if let container = list.first(where: { $0.cell.type == item.type }) {
+    func create(for item: Item) -> Bool {
+        if let container = list.first(where: { $0.cell.type == item.type && $0.item == nil }) {
             setActive(cell: container.cell)
             newCell = container.cell
+            
+            return true
         }
+        return false
     }
     
     func startMoving(item: Item) {
-        print(#function)
         if let container = list.first(where: { cellWithEquipment in
             if let storeItem = cellWithEquipment.item {
                 return storeItem.isEqual(to: item)
@@ -123,15 +124,16 @@ extension AvatarModelNode: ContainingItems {
     }
     
     func delete() {
-        print(#function)
         if let cell = newCell {
             setUnactive(cell: cell)
+            if var containerIndex = list.firstIndex(where: { $0.cell.isEqual(to: cell) }) {
+                list[containerIndex].item = nil
+            }
             newCell = nil
         }
     }
     
     func moveBack(item: Item) {
-        print(#function)
         if let container = list.first(where: { cellWithEquipment in
             if let storeItem = cellWithEquipment.item {
                 return storeItem.isEqual(to: item)
@@ -139,14 +141,12 @@ extension AvatarModelNode: ContainingItems {
             return false
         }) {
             item.node.position = container.cell.node.position
-            setUnactive(cell: container.cell)
         }
         
         newCell = nil
     }
     
     func save(item: Item) {
-        print(#function)
         if let cell = newCell {
             put(item: item, in: cell)
         }

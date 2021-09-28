@@ -28,8 +28,10 @@ extension Item where Self: Equatable {
 
 
 enum ItemType: String {
+    
     case skill
     case oneHand
     case twoHands
     case shield
+    
 }

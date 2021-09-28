@@ -16,10 +16,13 @@ class ListNode: SKShapeNode {
             countLabel.text = String("items: \(list.count)")
         }
     }
+    private let maxCount: Int
+    
     private(set) var newCell: Cell?
     private var countLabel: SKLabelNode = SKLabelNode(text: "items: 0")
     
-    init(size: CGSize, list: [Item] = []) {
+    init(size: CGSize, list: [Item] = [], maxCount: Int = 0) {
+        self.maxCount = maxCount
         super.init()
         
         add(items: list)
@@ -116,9 +119,13 @@ class ListNode: SKShapeNode {
 extension ListNode: ContainingItems {
     
     /// Create new cell for outer component
-    func create(for item: Item) {
-        let cell = createCell()
-        newCell = cell
+    func create(for item: Item) -> Bool {
+        if maxCount == 0 || list.count + 1 <= maxCount {
+            let cell = createCell()
+            newCell = cell
+            return true
+        }
+        return false
     }
     
     /// Regestry item as moving item

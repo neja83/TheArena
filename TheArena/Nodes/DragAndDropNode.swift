@@ -71,9 +71,10 @@ extension DragAndDropNode {
 
                 // first inter in container
                 if targetNode == nil {
-                    targetNode = containerNode
-                    targetNode?.create(for: movingItem)
-                    changedNode = false
+                    if containerNode.create(for: movingItem) {
+                        targetNode = containerNode
+                        changedNode = false
+                    }
                 } else if (targetNode?.isEqual(to: containerNode)) != nil {
                     changedNode = false
                 }

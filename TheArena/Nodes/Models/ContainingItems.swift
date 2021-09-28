@@ -5,12 +5,17 @@
 //  Created by Eugene Krapivenko on 23.09.2021.
 //
 
-/// Создание и сохранение объекта в объекте реализации
+/// Item container
 protocol ContainingItems {
-    func create(for item: Item);
+    
+    func create(for item: Item) -> Bool;
+    
     func startMoving(item: Item)
+    
     func delete();
+    
     func moveBack(item: Item);
+    
     func save(item: Item);
     
     func isEqual(to: ContainingItems) -> Bool;

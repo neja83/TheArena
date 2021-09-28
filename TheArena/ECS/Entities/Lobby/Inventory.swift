@@ -17,18 +17,17 @@ class Inventory: GKEntity {
         let showComponent = ShowComponent(show: false)
         let equipmentComponent = EquipmentComponent()
         let avatarModelComponent = AvatarModelComponent()
+        let movingComponent = MovingComponent()
         
         addComponent(showComponent)
         addComponent(visualComponent)
         addComponent(dragAndDropComponent)
         addComponent(avatarModelComponent)
         addComponent(equipmentComponent)
+        addComponent(movingComponent)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
-    
 }

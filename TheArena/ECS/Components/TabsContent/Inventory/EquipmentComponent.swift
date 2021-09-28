@@ -22,7 +22,7 @@ extension EquipmentComponent {
             node.name = "Equipment"
             
             let item1 = addTestItem(color: .blue, type: .oneHand)
-            let item2 = addTestItem(color: .orange, type: .twoHands)
+            let item2 = addTestItem(color: .orange, type: .oneHand)
             let item3 = addTestItem(color: .darkGray, type: .shield)
             node.add(items: [item1, item2, item3])
             

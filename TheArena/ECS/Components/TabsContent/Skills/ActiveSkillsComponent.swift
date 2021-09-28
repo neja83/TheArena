@@ -9,7 +9,7 @@ import GameplayKit
 
 class ActiveSkillsComponent: GKComponent {
     
-    var node: ListNode =  ListNode(size: LobbyElements.activeSkillPanel)
+    var node: ListNode =  ListNode(size: LobbyElements.activeSkillPanel, maxCount: 2)
     
 }
 
