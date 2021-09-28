@@ -13,7 +13,7 @@ class FrameComponent: GKComponent {
     
     init(size: CGSize, color: UIColor = .white) {
         shape = SKShapeNode(rectOf: size)
-        shape.name = "Avatar"
+        shape.name = "Frame"
         shape.position = .zero
         shape.strokeColor = color
         

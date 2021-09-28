@@ -7,19 +7,19 @@
 
 import GameplayKit
 
-class ActiveSkillComponent: GKComponent {
+class ActiveSkillsComponent: GKComponent {
     
     var node: ListNode =  ListNode(size: LobbyElements.activeSkillPanel)
     
 }
 
-extension ActiveSkillComponent {
+extension ActiveSkillsComponent {
     
     override func didAddToEntity() {
         if let dragAndDropNode = entity?.component(ofType: DragAndDropComponent.self)?.node {
             node.position = CGPoint(x: -dragAndDropNode.frame.size.width/3, y: 0)
             node.zPosition = dragAndDropNode.zPosition + 5
-            node.name = "ActiveSkillComponent"
+            node.name = "ActiveSkillsComponent"
             
             node.entity = entity
             dragAndDropNode.addChild(node)

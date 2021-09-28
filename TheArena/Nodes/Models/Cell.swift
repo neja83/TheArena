@@ -8,8 +8,12 @@
 import  SpriteKit
 
 protocol Cell {
+    
     var id: Int32 { get }
+    
     var node: SKNode { get }
+    
+    var type: ItemType { get }
     
     func isEqual(to: Cell) -> Bool;
 }

@@ -28,6 +28,7 @@ class ItemNode: SKShapeNode {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         isMoving = true
+        zPosition += 5
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -39,6 +40,9 @@ class ItemNode: SKShapeNode {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if isMoving {
+            zPosition -= 5
+        }
         isMoving = false
     }
 }

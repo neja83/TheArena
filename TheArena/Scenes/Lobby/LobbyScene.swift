@@ -25,7 +25,6 @@ class LobbyScene: SKScene {
         let nodes = nodes(at: first.location(in: self))
         
         for node in nodes {
-            print("\(String(describing: node.name)): \(node.zPosition)")
             node.touchesBegan(touches, with: event)
         }
     }
@@ -98,4 +97,6 @@ enum LobbyElements {
     static let activeSkillPanel: CGSize = CGSize(width: 260, height: 429)
     static let skillRadius: CGFloat = 50
     static let commonSkillPanel: CGSize = CGSize(width: 520, height: 429)
+    static let equipmentPanel: CGSize = CGSize(width: 400, height: 429)
+    static let avatarModelPanel: CGSize = CGSize(width: 400, height: 429)
 }

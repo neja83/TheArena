@@ -60,11 +60,11 @@ extension DragAndDropNode {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard let first = touches.first, movingItem != nil, let parentNode = self.parentNode else { return }
+        guard let first = touches.first, let movingItem = movingItem, let parentNode = self.parentNode else { return }
 
         let nodes = nodes(at: first.location(in: self))
         
-        var chanchedNode: Bool = true
+        var changedNode: Bool = true
         
         for node in nodes {
             if let containerNode = node as? ContainingItems, !containerNode.isEqual(to: parentNode) {
@@ -72,17 +72,17 @@ extension DragAndDropNode {
                 // first inter in container
                 if targetNode == nil {
                     targetNode = containerNode
-                    targetNode?.create()
-                    chanchedNode = false
+                    targetNode?.create(for: movingItem)
+                    changedNode = false
                 } else if (targetNode?.isEqual(to: containerNode)) != nil {
-                    chanchedNode = false
+                    changedNode = false
                 }
             }
 
 
         }
         
-        if chanchedNode {
+        if changedNode {
             targetNode?.delete()
             targetNode = nil
         }

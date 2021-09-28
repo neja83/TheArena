@@ -7,7 +7,7 @@
 
 /// Создание и сохранение объекта в объекте реализации
 protocol ContainingItems {
-    func create();
+    func create(for item: Item);
     func startMoving(item: Item)
     func delete();
     func moveBack(item: Item);

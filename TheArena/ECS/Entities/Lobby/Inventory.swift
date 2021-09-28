@@ -12,14 +12,17 @@ class Inventory: GKEntity {
     init(textureName: String) {
         super.init()
         
-        let visualComponent = VisualComponent(textureName: textureName)
+        let visualComponent = VisualComponent(textureName: textureName, zPosition: 5)
+        let dragAndDropComponent = DragAndDropComponent(textureName: textureName)
         let showComponent = ShowComponent(show: false)
-        
-        let frameComponent = FrameComponent(size: LobbyElements.contentSize, color: .cyan)
+        let equipmentComponent = EquipmentComponent()
+        let avatarModelComponent = AvatarModelComponent()
         
         addComponent(showComponent)
         addComponent(visualComponent)
-        addComponent(frameComponent)
+        addComponent(dragAndDropComponent)
+        addComponent(avatarModelComponent)
+        addComponent(equipmentComponent)
     }
     
     required init?(coder: NSCoder) {

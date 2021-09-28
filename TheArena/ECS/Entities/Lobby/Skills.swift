@@ -15,7 +15,7 @@ class Skills: GKEntity {
         let visualComponent = VisualComponent(textureName: textureName, zPosition: 5)
         let dragAndDropComponent = DragAndDropComponent(textureName: textureName)
         let showComponent = ShowComponent(show: false)
-        let activeSkillsComponent = ActiveSkillComponent()
+        let activeSkillsComponent = ActiveSkillsComponent()
         let commonSkillsComponent = CommonSkillsComponent()
         let movingComponent = MovingComponent()
     

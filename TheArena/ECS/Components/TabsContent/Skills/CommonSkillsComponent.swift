@@ -36,7 +36,7 @@ extension CommonSkillsComponent {
         itemNode.fillColor = color
         itemNode.position = .zero
         itemNode.zPosition = 20
-        let item = SkillItem(id: Int32.random(in: 1...Int32.max), node: itemNode)
+        let item = Skill(id: Int32.random(in: 1...Int32.max), node: itemNode, type: .skill)
         itemNode.item = item
         
         return item

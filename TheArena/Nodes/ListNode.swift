@@ -11,8 +11,6 @@ import GameplayKit
 /// List of Items
 class ListNode: SKShapeNode {
   
-    var component: GKComponent?
-    
     private(set) var list: [CellWithItem] = [] {
         didSet{
             countLabel.text = String("items: \(list.count)")
@@ -118,7 +116,7 @@ class ListNode: SKShapeNode {
 extension ListNode: ContainingItems {
     
     /// Create new cell for outer component
-    func create() {
+    func create(for item: Item) {
         let cell = createCell()
         newCell = cell
     }
